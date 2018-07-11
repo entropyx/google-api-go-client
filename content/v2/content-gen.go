@@ -4,10 +4,10 @@
 //
 // Usage example:
 //
-//   import "google.golang.org/api/content/v2"
+//   import "github.com/entropyx/google-api-go-client/content/v2"
 //   ...
 //   contentService, err := content.New(oauthHttpClient)
-package content // import "google.golang.org/api/content/v2"
+package content // import "github.com/entropyx/google-api-go-client/content/v2"
 
 import (
 	"bytes"
@@ -20,9 +20,9 @@ import (
 	"strconv"
 	"strings"
 
+	gensupport "github.com/entropyx/google-api-go-client/gensupport"
 	context "golang.org/x/net/context"
 	ctxhttp "golang.org/x/net/context/ctxhttp"
-	gensupport "google.golang.org/api/gensupport"
 	googleapi "google.golang.org/api/googleapi"
 )
 
