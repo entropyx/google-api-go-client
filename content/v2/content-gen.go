@@ -14,15 +14,16 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	context "golang.org/x/net/context"
-	ctxhttp "golang.org/x/net/context/ctxhttp"
-	gensupport "google.golang.org/api/gensupport"
-	googleapi "google.golang.org/api/googleapi"
 	"io"
 	"net/http"
 	"net/url"
 	"strconv"
 	"strings"
+
+	context "golang.org/x/net/context"
+	ctxhttp "golang.org/x/net/context/ctxhttp"
+	gensupport "google.golang.org/api/gensupport"
+	googleapi "google.golang.org/api/googleapi"
 )
 
 // Always reference these packages, just in case the auto-generated code
@@ -8008,6 +8009,8 @@ func (s *Price) MarshalJSON() ([]byte, error) {
 
 // Product: Product data.
 type Product struct {
+	DestinationStatues []*ProductStatusDestinationStatus
+
 	// AdditionalImageLinks: Additional URLs of images of the item.
 	AdditionalImageLinks []string `json:"additionalImageLinks,omitempty"`
 
