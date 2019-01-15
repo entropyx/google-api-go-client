@@ -8009,7 +8009,7 @@ func (s *Price) MarshalJSON() ([]byte, error) {
 
 // Product: Product data.
 type Product struct {
-	DestinationStatues []*ProductStatusDestinationStatus
+	DestinationStatuses []*ProductStatusDestinationStatus
 
 	// AdditionalImageLinks: Additional URLs of images of the item.
 	AdditionalImageLinks []string `json:"additionalImageLinks,omitempty"`
